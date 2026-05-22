@@ -1,0 +1,104 @@
+# ---------- Secrets / credentials ----------
+# Never commit these. If you need to share variable *names*, commit a .env.example
+.env
+.env.*
+!.env.example
+*.env
+secrets.*
+credentials.*
+*.pem
+*.key
+*.p12
+*.pfx
+*_rsa
+*_rsa.pub
+*.cert
+*.crt
+
+# Common LLM/cloud config dirs that may cache tokens
+.openai/
+.anthropic/
+.langchain/
+.langsmith/
+.huggingface/
+.cache/huggingface/
+.aws/
+.gcloud/
+.azure/
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+.eggs/
+build/
+dist/
+pip-wheel-metadata/
+.Python
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+# Testing / coverage / type-check caches
+.pytest_cache/
+.mypy_cache/
+.pyre/
+.pytype/
+.ruff_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+.hypothesis/
+
+# ---------- Jupyter ----------
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+profile_default/
+ipython_config.py
+
+# ---------- Vector stores / local DBs (LangChain caches) ----------
+chroma_langchain_db/
+chroma_db/
+chromadb/
+*.chroma
+faiss_index/
+*.faiss
+*.index
+.qdrant/
+.pinecone/
+.weaviate/
+*.sqlite
+*.sqlite3
+*.db
+
+# ---------- Editors / IDEs ----------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# ---------- OS junk ----------
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ---------- Logs / tmp ----------
+*.log
+logs/
+tmp/
+.tmp/
+
+# ---------- Claude / agent tooling ----------
+.claude/
